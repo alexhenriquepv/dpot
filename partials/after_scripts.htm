@@ -1,0 +1,38 @@
+<script src="{{ 'assets/js/jquery.min.js' |theme }}"></script>
+<script src="{{ 'assets/js/popper.min.js' |theme }}"></script>
+<script src="{{ 'assets/js/bootstrap.bundle.min.js' |theme }}"></script>
+<script src="{{ 'assets/js/jquery-3.0.0.min.js' |theme }}"></script>
+<script src="{{ 'assets/js/plugin.js' |theme }}"></script>
+<!-- sidebar -->
+<script src="{{ 'assets/js/jquery.mCustomScrollbar.concat.min.js' |theme }}"></script>
+<script src="{{ 'assets/js/custom.js' |theme }}"></script>
+<!-- javascript --> 
+<script src="{{ 'assets/js/owl.carousel.js' |theme }}"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+        });
+        
+        $(".zoom").hover(function(){
+        
+        $(this).addClass('transition');
+        }, function(){
+        
+        $(this).removeClass('transition');
+        });
+        });
+</script> 
+
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
