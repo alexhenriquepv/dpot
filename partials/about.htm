@@ -1,8 +1,14 @@
-<div class="about_section">
+{% if not this.theme.about_image %}
+    {% set about_image = 'assets/images/about-img.jpg' %}
+{% else %}
+    {% set about_image = this.theme.banner_image %}
+{% endif %}
+
+<div class="about_section" style="background-image: url('{{ about_image |theme }}');">
     <div class="about_text">
         <div class="container">
-            <h1 class="about_taital_1"><strong><span style="color: #f7941d;">About</span> Dogs</strong></h1>
-            <p class="magna_text"> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+            <h1 class="about_taital_1"><strong><span style="color: #f7941d;">{{ this.theme.about_title }}</span></strong></h1>
+            <p class="magna_text">{{ this.theme.about_description }}</p>
             <div class="about_bt">
                 <button class="more_bt">Read More</button>
             </div>

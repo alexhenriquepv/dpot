@@ -1,0 +1,244 @@
+tabs:
+    fields:
+        site_name:
+            label: Site name
+            comment: The website name as it should appear on the front-end
+            default:  D-pot Theme
+            span: left
+            tab: General
+
+        site_description:
+            label: Site description
+            comment: The website description for metadata
+            default:  D-pot Theme for October CMS
+            span: full
+            tab: General
+
+        site_logo:
+            label: Site Logo
+            comment: The logo above the banner
+            type: mediafinder
+            mode: image
+            default: assets/images/logo.png
+            imageWidth: 240
+            imageHeight: 90
+            maxItems: 1
+            span: left
+            tab: General
+
+        # Banner Section
+        banner_active:
+            type: switch
+            label: Display Banner
+            default: true
+            tab: Banner
+
+        banner_title:
+            label: Banner title
+            comment: Title above image
+            default:  Take care my dog
+            span: left
+            tab: Banner
+
+        banner_description:
+            type: textarea
+            label: Banner description above image
+            default: consectetur adipiscing elit, sed do eiusmod tempor incidid
+            size: small
+            span: left
+            tab: Banner
+
+        banner_image:
+            label: Banner
+            comment: The main image of site
+            type: mediafinder
+            mode: image
+            default: assets/images/banner.jpg
+            imageWidth: 1200
+            imageHeight: 600
+            maxItems: 1
+            span: left
+            tab: Banner
+        # Banner Section
+
+        # About Section
+        about_active:
+            type: switch
+            label: Display About
+            default: true
+            tab: About
+
+        about_title:
+            type: text
+            label: Gallery Title
+            default: About Dogs
+            span: left
+            tab: About
+
+        about_description:
+            type: textarea
+            label: About description text
+            default:
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Tempora quis, repellendus dolore explicabo incidunt dicta aperiam quasi.
+            size: small
+            span: left
+            tab: About
+
+        about_image:
+            label: About Image
+            comment: The about section image
+            type: mediafinder
+            mode: image
+            default: assets/images/about-img.jpg
+            imageWidth: 1200
+            imageHeight: 600
+            maxItems: 1
+            span: left
+            tab: About
+        # About Section
+
+        # Gallery Section
+        gallery_active:
+            type: switch
+            label: Display Gallery
+            default: true
+            tab: Gallery
+
+        gallery_title:
+            type: text
+            label: Gallery Title
+            default: Our Dogs
+            span: left
+            tab: Gallery
+
+        gallery_description:
+            type: textarea
+            label: Gallery description text
+            default:
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Tempora quis, repellendus dolore explicabo incidunt dicta aperiam quasi, 
+                impedit necessitatibus asperiores fugiat at quisquam natus commodi quas doloremque dolores doloribus labore?
+            size: small
+            span: left
+            tab: Gallery
+
+        gallery_images:
+            type: repeater
+            form:
+                fields:
+                    image:
+                        label: Image
+                        comment: Select an image
+                        type: mediafinder
+                        mode: image
+                        imageWidth: 600
+                        imageHeight: 300
+                        maxItems: 1
+            tab: Gallery
+        # Gallery Section
+
+        # Adoption Section
+        adoption_active:
+            type: switch
+            label: Display Adoption
+            default: true
+            tab: Adoption
+
+        adoption_title:
+            type: text
+            label: Adoption Title
+            default: Pet adoption be part of something beautiful
+            span: left
+            tab: Adoption
+
+        adoption_description:
+            type: textarea
+            label: Adoption description text
+            default:
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Tempora quis, repellendus dolore explicabo incidunt dicta aperiam quasi, 
+                impedit necessitatibus asperiores fugiat at quisquam natus commodi quas doloremque dolores doloribus labore?
+            size: small
+            span: left
+            tab: Adoption
+
+        adoption_image:
+            label: Adoption Image
+            comment: Select an image
+            default: assets/images/dog-img.png
+            type: mediafinder
+            mode: image
+            imageWidth: 350
+            imageHeight: 700
+            maxItems: 1
+            span: left
+            tab: Adoption
+        # Adoption Section
+
+        # Contact Section
+        contact_active:
+            type: switch
+            label: Display Contact
+            default: true
+            tab: Contact
+        # Contact Section
+
+        # Newsletter Section
+        newsletter_active:
+            type: switch
+            label: Display Newsletter
+            default: true
+            tab: Newsletter
+        # Newsletter Section
+
+        # Footer Section
+        footer_active:
+            type: switch
+            label: Display Footer
+            default: true
+            tab: Footer
+
+        footer_address:
+            type: text
+            label: Address
+            default: Gb road 123 london Uk
+            span: left
+            tab: Footer
+
+        footer_phone:
+            type: text
+            label: Phone Number
+            default: (+71) 9876543210
+            span: left
+            tab: Footer
+
+        footer_email:
+            type: text
+            label: Email
+            default: alexhenriquepv@gmail.com
+            span: left
+            tab: Footer
+
+        # Menu Section
+        menu_active:
+            type: switch
+            label: Display Menu
+            default: true
+            tab: Menu
+
+        menu_items:
+            type: repeater
+            form:
+                fields:
+                    label:
+                        type: Text
+                        label: Menu label
+                        default: New Menu
+                        span: left
+                    url:
+                        type: text
+                        label: Menu URL
+                        default: /
+                        span: right
+            tab: Menu

@@ -1,38 +1,56 @@
-<div class="header_section">
+{% if not this.theme.banner_image %}
+    {% set banner_image = 'assets/images/banner.jpg' %}
+{% else %}
+    {% set banner_image = this.theme.banner_image %}
+{% endif %}
+
+<div class="header_section" style="background-image: url('{{ banner_image |theme }}');">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
-                <div><a href="index.html"><img src="{{ 'assets/images/logo.png'|theme }}"></a></div>
-            </div>
-            <div class="col-md-8">
-                <div class="menu_text">
-                    <ul>
-                        <li class="last">Log in / Register</li>
-                        <li class="last"><a href="#"><img src="{{ 'assets/images/search-icon.png'|theme }}"></a></li>
-                        <li class="active">
-                         <div id="myNav" class="overlay">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                         <div class="overlay-content">
-                             <a href="index.html">Home</a>
-                            <a href="about.html">About</a>
-                            <a href="gallery.html">Gallery</a>
-                            <a href="contact.html">Contact</a>
-                          </div>
-                        </div>
-                         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-                        </div>	
-                        </li>
-                    </ul>
+                <div>
+                    <a href="#">
+                        {% if this.theme.site_logo %}
+                            <img src="{{ this.theme.site_logo |theme }}">
+                        {% else %}
+                            <img src="{{ 'assets/images/logo.png' |theme }}">
+                        {% endif %}
+                    </a>
                 </div>
+            </div>
+            {% if this.theme.menu_active %}
+                <div class="col-md-8">
+                    <div class="menu_text">
+                        <ul>
+                            <li class="active">
+                                <div id="myNav" class="overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <div class="overlay-content">
+                                        {% if this.theme.menu_items %}
+                                            {% for m in this.theme.menu_items %}
+                                                <a href="{{ m.url }}">{{ m.label  }}</a>
+                                            {% endfor %}
+                                        {% else %}
+                                            {% content 'default_menu_items' %}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
+
     <div class="banner_main">
         <div class="container">
             <div class="ram">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1 class="taital">Best Pet Shop</h1>
-                        <p class="consectetur_text">consectetur adipiscing elit, sed do eiusmod tempor incidid</p>
+                        <h1 class="taital">{{ this.theme.banner_title }}</h1>
+                        <p class="consectetur_text">{{ this.theme.banner_description }}</p>
                         <div class="banner_bt">
                             <button class="read_bt">Read More</button>
                         </div>

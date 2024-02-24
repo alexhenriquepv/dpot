@@ -1,65 +1,30 @@
 <div class="section_footer">
     <div class="container">
-        <div class="mail_section">
-            <ul>
-                <li class="footer-logo"><img src="{{ 'assets/images/footer-logo.png'|theme }}"></li>
-                <li class="footer-logo"><img src="{{ 'assets/images/map-icon.png'|theme }}"><span class="map_text">Gb road 123 london Uk</span></li>
-                <li class="footer-logo"><img src="{{ 'assets/images/call-icon.png'|theme }}"><span class="map_text">(+71) 9876543210</span></li>
-                <li class="footer-logo"><img src="{{ 'assets/images/email-icon.png'|theme }}"><span class="map_text">Demo@gmail.com</span></li>
-            </ul>
-        </div> 
         <div class="footer_section_2">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <h2 class="shop_text">About Pet Shop</h2>
-                    <p class="dummy_text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and </p>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <ul>
+                        <li class="footer-logo"><img src="{{ 'assets/images/logo.png'|theme }}"></li>
+                        <li class="footer-logo"><img src="{{ 'assets/images/icons/map-icon.png'|theme }}">
+                            <span class="map_text">{{ this.theme.footer_address }}</span>
+                        </li>
+                        <li class="footer-logo"><img src="{{ 'assets/images/icons/call-icon.png'|theme }}">
+                            <span class="map_text">{{ this.theme.footer_phone }}</span>
+                        </li>
+                        <li class="footer-logo"><img src="{{ 'assets/images/icons/email-icon.png'|theme }}">
+                            <span class="map_text">{{ this.theme.footer_email }}</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <h2 class="shop_text">Useful Links</h2>
-                    <div class="image-icon"><img src="{{ 'assets/images/bulit-icon.png'|theme }}"><span class="pet_text">Pet Dictionary</span></div>
-                    <div class="image-icon"><img src="{{ 'assets/images/bulit-icon.png'|theme }}"><span class="pet_text">Help Links</span></div>
-                    <div class="image-icon"><img src="{{ 'assets/images/bulit-icon.png'|theme }}"><span class="pet_text">Pet Attitudes</span></div>
-                    <div class="image-icon"><img src="{{ 'assets/images/bulit-icon.png'|theme }}"><span class="pet_text">Call a Doctor</span></div>
-                    <div class="image-icon"><img src="{{ 'assets/images/bulit-icon.png'|theme }}"><span class="pet_text">Help a Pet</span></div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <h2 class="shop_text">Overview</h2>
-                    <div class="image-icon"><img src="{{ 'assets/images/bulit-icon.png' |theme }}"><span class="pet_text">Bacerim Dictionary</span></div>
-                    <div class="image-icon"><img src="{{ 'assets/images/bulit-icon.png' |theme }}"><span class="pet_text">Help Links</span></div>
-                    <div class="image-icon"><img src="{{ 'assets/images/bulit-icon.png' |theme }}"><span class="pet_text">bacerim Attitudes</span></div>    				
-                </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <h2 class="adderess_text">Instagram</h2>
-                <div class="footer-img">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="footer-img"><img src="{{ 'assets/images/footer-img1.png'|theme }}" style="width: 100%;"></div>
-                            <div class="footer-img"><img src="{{ 'assets/images/footer-img2.png'|theme }}" style="width: 100%;"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="footer-img"><img src="{{ 'assets/images/footer-img3.png'|theme }}" style="width: 100%;"></div>
-                            <div class="footer-img"><img src="{{ 'assets/images/footer-img4.png'|theme }}" style="width: 100%;"></div>
-                        </div>
-                    </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <h2 class="shop_text">{{ this.theme.about_title }}</h2>
+                    <p class="dummy_text">{{ this.theme.about_description }}</p>
                 </div>
             </div>
             </div>
+            <div class="copyright">
+                <a href="https://alexhenrique.github.io">&copy; Alex Paiva 2024</a>
             </div>
-            <div class="social-icon">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="icons">
-                            <ul>
-                                <li><a href="#"><img src="{{ 'assets/images/fb-icon.png'|theme }}"></a></li>
-                                <li><a href="#"><img src="{{ 'assets/images/twitter-icon.png'|theme }}"></a></li>
-                                <li><a href="#"><img src="{{ 'assets/images/google-icon.png'|theme }}"></a></li>
-                                <li><a href="#"><img src="{{ 'assets/images/linkedin-icon.png'|theme }}"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">2024. <a href="https://alexhenrique.github.io">Alex Paiva</a></div>
         </div>
     </div>
 </div>

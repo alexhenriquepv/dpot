@@ -2,3 +2,25 @@ title = "index.htm"
 layout = "default"
 url = "/"
 ==
+
+{% if this.theme.banner_active %}
+    {% partial "banner" %}
+{% endif %}
+{% if this.theme.about_active %}
+    {% partial "about" %}
+{% endif %}
+{% if this.theme.gallery_active %}
+    {% partial "gallery" %}
+{% endif %}
+{% if this.theme.adoption_active %}
+    {% partial "adoption" %}
+{% endif %}
+{% if this.theme.contact_active %}
+    {% partial "contact" %}
+{% endif %}
+{% if this.theme.newsletter_active %}
+    {% partial "newsletter" %}
+{% endif %}
+{% if this.theme.footer_active %}
+    {% partial "footer" %}
+{% endif %}

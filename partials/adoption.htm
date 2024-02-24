@@ -1,0 +1,25 @@
+<div class="gallery_section_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1 class="pet_taital">{{ this.theme.adoption_title }}</h1>
+                <p class="lorem_text">{{ this.theme.adoption_description }}</p>
+            <div class="banner_bt">
+                <button class="dog_bt">Read More</button>
+            </div>
+            <div class="box_3">
+                <h1 class="numbar">03</h1>
+            </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="dog_img">
+                    {% if this.theme.adoption_image %}
+                        <img src="{{ this.theme.adoption_image |theme }}" style="max-width: 100%;">
+                    {% else %}
+                        <img src="{{ 'assets/images/dog-img.png' |theme }}" style="max-width: 100%;">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

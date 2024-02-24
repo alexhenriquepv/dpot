@@ -168,7 +168,7 @@ a {
 }
 .menu_text ul{ margin:0px; padding: 0px;}
 .menu_text li{ 
-	float: left; 
+	float: right; 
 	padding-right: 15px;
   padding-left: 15px; 
 	font-size: 17pt;
@@ -728,8 +728,6 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
   font-size: 60px;
 }
 
-
-
 .header-main{
 	width: 100%;
 	float: left;
@@ -738,4 +736,6 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-.footer-logo{  }
+.footer-logo { 
+    margin-bottom: 1em;
+ }
