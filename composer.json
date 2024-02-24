@@ -1,0 +1,8 @@
+{
+    "name": "alexpaiva/dpot-theme",
+    "type": "october-theme",
+    "description": "Pet Shop and Hotel",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

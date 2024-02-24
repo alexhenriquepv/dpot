@@ -2,9 +2,8 @@ name: Dpot
 description: 'Pet Shop and Hotel'
 author: 'Alex Paiva'
 homepage: 'https://alexhenriquepv.github.io'
-authorCode: ''
-code: ''
+authorCode: AlexPaiva
+code: dpot
 parent: ''
 database: '0'
-
 form: config/fields.yaml
