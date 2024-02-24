@@ -1,7 +1,7 @@
 {% if not this.theme.about_image %}
     {% set about_image = 'assets/images/about-img.jpg' %}
 {% else %}
-    {% set about_image = this.theme.banner_image %}
+    {% set about_image = this.theme.about_image %}
 {% endif %}
 
 <div class="about_section" style="background-image: url('{{ about_image |theme }}');">

@@ -1,22 +1,19 @@
 tabs:
     fields:
         site_name:
-            label: Site name
-            comment: The website name as it should appear on the front-end
+            label: ln.site_name
             default:  D-pot Theme
             span: left
-            tab: General
+            tab: ln.general
 
         site_description:
-            label: Site description
-            comment: The website description for metadata
+            label: ln.site_description
             default:  D-pot Theme for October CMS
             span: full
-            tab: General
+            tab: ln.general
 
         site_logo:
-            label: Site Logo
-            comment: The logo above the banner
+            label: ln.site_logo
             type: mediafinder
             mode: image
             default: assets/images/logo.png
@@ -24,33 +21,37 @@ tabs:
             imageHeight: 90
             maxItems: 1
             span: left
-            tab: General
+            tab: ln.general
+
+        site_maintenance_message:
+            label: ln.site_maintenance_message
+            default:  The Site is in Maintenance
+            span: full
+            tab: ln.general
 
         # Banner Section
         banner_active:
             type: switch
-            label: Display Banner
+            label: ln.banner_active
             default: true
-            tab: Banner
+            tab: ln.banner
 
         banner_title:
-            label: Banner title
-            comment: Title above image
+            label: ln.banner_title
             default:  Take care my dog
             span: left
-            tab: Banner
+            tab: ln.banner
 
         banner_description:
             type: textarea
-            label: Banner description above image
+            label: ln.banner_description
             default: consectetur adipiscing elit, sed do eiusmod tempor incidid
             size: small
             span: left
-            tab: Banner
+            tab: ln.banner
 
         banner_image:
-            label: Banner
-            comment: The main image of site
+            label: ln.banner_image
             type: mediafinder
             mode: image
             default: assets/images/banner.jpg
@@ -58,36 +59,35 @@ tabs:
             imageHeight: 600
             maxItems: 1
             span: left
-            tab: Banner
+            tab: ln.banner
         # Banner Section
 
         # About Section
         about_active:
             type: switch
-            label: Display About
+            label: ln.about_active
             default: true
-            tab: About
+            tab: ln.about
 
         about_title:
             type: text
-            label: Gallery Title
+            label: ln.about_title
             default: About Dogs
             span: left
-            tab: About
+            tab: ln.about
 
         about_description:
             type: textarea
-            label: About description text
+            label: ln.about_description
             default:
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Tempora quis, repellendus dolore explicabo incidunt dicta aperiam quasi.
             size: small
             span: left
-            tab: About
+            tab: ln.about
 
         about_image:
-            label: About Image
-            comment: The about section image
+            label: ln.about_image
             type: mediafinder
             mode: image
             default: assets/images/about-img.jpg
@@ -95,33 +95,33 @@ tabs:
             imageHeight: 600
             maxItems: 1
             span: left
-            tab: About
+            tab: ln.about
         # About Section
 
         # Gallery Section
         gallery_active:
             type: switch
-            label: Display Gallery
+            label: ln.gallery_active
             default: true
-            tab: Gallery
+            tab: ln.gallery
 
         gallery_title:
             type: text
-            label: Gallery Title
+            label: ln.gallery_title
             default: Our Dogs
             span: left
-            tab: Gallery
+            tab: ln.gallery
 
         gallery_description:
             type: textarea
-            label: Gallery description text
+            label: ln.gallery_description
             default:
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Tempora quis, repellendus dolore explicabo incidunt dicta aperiam quasi, 
                 impedit necessitatibus asperiores fugiat at quisquam natus commodi quas doloremque dolores doloribus labore?
             size: small
             span: left
-            tab: Gallery
+            tab: ln.gallery
 
         gallery_images:
             type: repeater
@@ -129,42 +129,42 @@ tabs:
                 fields:
                     image:
                         label: Image
-                        comment: Select an image
+                        comment: gallery_images.select
                         type: mediafinder
                         mode: image
                         imageWidth: 600
                         imageHeight: 300
-                        maxItems: 1
-            tab: Gallery
+                        maxItems: 6
+            tab: ln.gallery
         # Gallery Section
 
         # Adoption Section
         adoption_active:
             type: switch
-            label: Display Adoption
+            label: ln.adoption_active
             default: true
-            tab: Adoption
+            tab: ln.adoption
 
         adoption_title:
             type: text
-            label: Adoption Title
+            label: ln.adoption_title
             default: Pet adoption be part of something beautiful
             span: left
-            tab: Adoption
+            tab: ln.adoption
 
         adoption_description:
             type: textarea
-            label: Adoption description text
+            label: ln.adoption_description
             default:
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Tempora quis, repellendus dolore explicabo incidunt dicta aperiam quasi, 
                 impedit necessitatibus asperiores fugiat at quisquam natus commodi quas doloremque dolores doloribus labore?
             size: small
             span: left
-            tab: Adoption
+            tab: ln.adoption
 
         adoption_image:
-            label: Adoption Image
+            label: ln.adoption_image
             comment: Select an image
             default: assets/images/dog-img.png
             type: mediafinder
@@ -173,59 +173,59 @@ tabs:
             imageHeight: 700
             maxItems: 1
             span: left
-            tab: Adoption
+            tab: ln.adoption
         # Adoption Section
 
         # Contact Section
         contact_active:
             type: switch
-            label: Display Contact
+            label: ln.contact_active
             default: true
-            tab: Contact
+            tab: ln.contact
         # Contact Section
 
         # Newsletter Section
         newsletter_active:
             type: switch
-            label: Display Newsletter
+            label: ln.newsletter_active
             default: true
-            tab: Newsletter
+            tab: ln.newsletter
         # Newsletter Section
 
         # Footer Section
         footer_active:
             type: switch
-            label: Display Footer
+            label: ln.footer_active
             default: true
-            tab: Footer
+            tab: ln.footer
 
         footer_address:
             type: text
-            label: Address
+            label: ln.footer_address
             default: Gb road 123 london Uk
             span: left
-            tab: Footer
+            tab: ln.footer
 
         footer_phone:
             type: text
-            label: Phone Number
+            label: ln.footer_phone
             default: (+71) 9876543210
             span: left
-            tab: Footer
+            tab: ln.footer
 
         footer_email:
             type: text
-            label: Email
+            label: ln.footer_email
             default: alexhenriquepv@gmail.com
             span: left
-            tab: Footer
+            tab: ln.footer
 
         # Menu Section
         menu_active:
             type: switch
-            label: Display Menu
+            label: ln.menu_active
             default: true
-            tab: Menu
+            tab: ln.menu
 
         menu_items:
             type: repeater
@@ -233,12 +233,12 @@ tabs:
                 fields:
                     label:
                         type: Text
-                        label: Menu label
+                        label: ln.menu_label
                         default: New Menu
                         span: left
                     url:
                         type: text
-                        label: Menu URL
+                        label: ln.menu_url
                         default: /
                         span: right
-            tab: Menu
+            tab: ln.menu
